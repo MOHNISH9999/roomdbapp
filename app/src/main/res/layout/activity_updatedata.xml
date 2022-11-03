@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="100dp"
+    tools:context=".updatedata">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editfname"
+        android:hint="Name"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Date of birth:"
+        android:id="@+id/editlname"/>
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/t3"
+        android:padding="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:id="@+id/editgen"
+            android:text="Select Gender: "/>
+        <RadioButton
+            android:id="@+id/rbMale1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:textSize="20dp"
+            android:paddingRight="15dp" />
+        <RadioButton
+            android:id="@+id/rbFemale1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Female"
+            android:paddingRight="15dp" />
+    </RadioGroup>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select languages known:"
+        android:textSize="20dp"
+        android:layout_marginRight="80dp"/>
+    <TextView
+        android:id="@+id/lang12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20dp"
+        />
+
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingRight="6dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <CheckBox
+            android:id="@+id/java1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="java"
+            android:textSize="20dp"
+            />
+        <CheckBox
+            android:id="@+id/python1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="python"
+            android:textSize="20dp"
+            />
+        <CheckBox
+            android:id="@+id/swift1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="swift"
+            android:textSize="20dp"
+            />
+        <CheckBox
+            android:id="@+id/php1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="php"
+            android:textSize="20dp"
+            />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="Update"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
